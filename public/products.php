@@ -28,7 +28,7 @@
                 <img src="img/sample-product.jpg" alt="Product">
                 <h3>Sample Product</h3>
                 <p>$19.99</p>
-                <a href="checkout.html" class="btn">Add to Cart</a>
+                <a href="checkout.php" class="btn">Add to Cart</a>
             </div>
             <!-- Add more product cards as needed -->
         </div>

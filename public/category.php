@@ -24,9 +24,9 @@
     <section>
         <h2>Product Categories</h2>
         <ul>
-            <li><a href="products.html?category=electronics">Electronics</a></li>
-            <li><a href="products.html?category=clothing">Clothing</a></li>
-            <li><a href="products.html?category=home-garden">Home & Garden</a></li>
+            <li><a href="products.php?category=electronics">Electronics</a></li>
+            <li><a href="products.php?category=clothing">Clothing</a></li>
+            <li><a href="products.php?category=home-garden">Home & Garden</a></li>
             <!-- Add more categories as needed -->
         </ul>
     </section>
