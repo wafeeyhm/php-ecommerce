@@ -17,7 +17,7 @@ defined("DB_PASS") ? null : define("DB_PASS", "pass123");
 defined("DB_NAME") ? null : define("DB_NAME", "ecom_db");
 
 //establish connection
-$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+//$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 require_once("functions.php");
 
