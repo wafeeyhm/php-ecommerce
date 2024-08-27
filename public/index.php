@@ -6,7 +6,6 @@ include(TEMPLATE_FRONT .  DS . "header.php");
 
 ?>
 
-
 <main>
     <section>
         <h2>Featured Products</h2>
@@ -21,8 +20,9 @@ include(TEMPLATE_FRONT .  DS . "header.php");
         </div>
     </section>
 </main>
-<footer>
-    <p>&copy; 2024 E-Commerce Store</p>
-</footer>
-</body>
-</html>
+
+<?php
+
+include(TEMPLATE_FRONT .  DS . "footer.php");
+
+?>
