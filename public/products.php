@@ -6,16 +6,23 @@ include(TEMPLATE_FRONT .  DS . "header.php");
 
 ?>
 <main>
-    <section>
+    <section class="product-list">
         <h2>Available Products</h2>
-        <div class="products">
-            <div class="product-card">
-                <img src="img/sample-product.jpg" alt="Product">
-                <h3>Sample Product</h3>
-                <p>$19.99</p>
-                <a href="checkout.php" class="btn">Add to Cart</a>
+        <div class="product-grid">
+            <div class="product">
+                <a href="product-detail.html">
+                    <img src="images/product-image.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                </a>
             </div>
-            <!-- Add more product cards as needed -->
+            <div class="product">
+                <a href="product-detail.html">
+                    <img src="images/product-image.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$29.99</p>
+                </a>
+            </div>
         </div>
     </section>
 </main>

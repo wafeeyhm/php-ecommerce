@@ -7,16 +7,26 @@ include(TEMPLATE_FRONT .  DS . "header.php");
 ?>
 
 <main>
-    <section>
+    <section class="hero">
+        <h2>Discover Our Latest Products</h2>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+    <section class="featured-products">
         <h2>Featured Products</h2>
-        <div class="products">
-            <div class="product-card">
-                <img src="img/sample-product.jpg" alt="Product">
-                <h3>Sample Product</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/product-image.jpg" alt="Product 1">
+                <h3>Product 1</h3>
                 <p>$19.99</p>
-                <a href="products.php" class="btn">View Product</a>
+                <a href="product-detail.html" class="btn">View Details</a>
             </div>
-            <!-- Add more products as needed -->
+            <div class="product">
+                <img src="images/product-image.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$29.99</p>
+                <a href="product-detail.html" class="btn">View Details</a>
+            </div>
         </div>
     </section>
 </main>
