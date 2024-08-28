@@ -47,6 +47,8 @@ footer {
 
 main {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 h2 {
@@ -230,66 +232,49 @@ form button.btn {
 }
 
 /* Category Page */
-.category {
-    margin-top: 20px;
-}
-
-.category h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Contact Page */
-.contact {
-    margin-top: 20px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact form {
+.category-listing {
+    flex-basis: 25%;
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
 }
 
-.contact form div {
-    margin-bottom: 15px;
+.category-listing h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.contact form label {
+.category-listing ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-listing ul li {
+    margin-bottom: 10px;
+}
+
+.category-listing ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact form input[type="text"],
-.contact form input[type="email"],
-.contact form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 8px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.contact form textarea {
-    resize: vertical;
+.category-listing ul li a:hover {
+    background-color: #f4f4f4;
 }
 
-.contact form button.btn {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+.category-products {
+    flex-basis: 70%;
+}
+
+.category-products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
 }
