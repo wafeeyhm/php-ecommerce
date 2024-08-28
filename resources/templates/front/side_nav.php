@@ -12,7 +12,7 @@
 
         while ($row = mysqli_fetch_array($send_query)) {
             # code...
-            echo "<li><a href='category.php'>{$row['category_name']}</a></li>";
+            echo "<li><a href='category.php'>{$row['name']}</a></li>";
         }
 
     ?>
