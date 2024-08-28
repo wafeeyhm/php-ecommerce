@@ -6,16 +6,7 @@ include(TEMPLATE_FRONT .  DS . "header.php");
 
 ?>
 <main>
-    <section class="category-listing">
-        <h2>Shop by Category</h2>
-        <ul>
-            <li><a href="category.html">Category 1</a></li>
-            <li><a href="category.html">Category 2</a></li>
-            <li><a href="category.html">Category 3</a></li>
-            <li><a href="category.html">Category 4</a></li>
-            <!-- Add more categories as needed -->
-        </ul>
-    </section>
+    <?php include(TEMPLATE_FRONT .  DS . "side_nav.php"); ?>
 
     <section class="category-products">
         <h2>[Category Name]</h2>
