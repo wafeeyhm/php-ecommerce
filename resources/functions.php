@@ -46,7 +46,18 @@ function get_products(){
 
     while ($row = fetch_array($query)) {
         # code...
-        echo $row['price'];
+        $product = <<<DELIMETER
+
+        <div class="product">
+            <img src="{$row['image_url']}" alt="{$row['name']}">
+            <h3>{$row['name']}</h3>
+            <p>{$row['price']}</p>
+            <a href="product-detail.php" class="btn">View Details</a>
+        </div>
+
+        DELIMETER;
+
+        echo $product;
     }
 }
 
