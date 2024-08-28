@@ -17,12 +17,6 @@ include(TEMPLATE_FRONT .  DS . "header.php");
         <!-- product grid -->
         <div class="product-grid">
             <?php get_products(); ?>
-            <div class="product">
-                <img src="images/product-image.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>$19.99</p>
-                <a href="product-detail.html" class="btn">View Details</a>
-            </div>
         </div>
         <!-- product grid -->
     </section>

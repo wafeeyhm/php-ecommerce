@@ -53,6 +53,7 @@ function get_products(){
             <h3>{$row['name']}</h3>
             <p>{$row['price']}</p>
             <a href="product-detail.php" class="btn">View Details</a>
+            <a href="product-detail.php" class="btn">Add to cart</a>
         </div>
 
         DELIMETER;
