@@ -14,20 +14,17 @@ include(TEMPLATE_FRONT .  DS . "header.php");
 
     <section class="featured-products">
         <h2>Featured Products</h2>
+        <!-- product grid -->
         <div class="product-grid">
+            <?php get_products(); ?>
             <div class="product">
                 <img src="images/product-image.jpg" alt="Product 1">
                 <h3>Product 1</h3>
                 <p>$19.99</p>
                 <a href="product-detail.html" class="btn">View Details</a>
             </div>
-            <div class="product">
-                <img src="images/product-image.jpg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>$29.99</p>
-                <a href="product-detail.html" class="btn">View Details</a>
-            </div>
         </div>
+        <!-- product grid -->
     </section>
 </main>
 
