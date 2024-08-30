@@ -4,6 +4,14 @@ require_once("../resources/config.php");
 
 include(TEMPLATE_FRONT .  DS . "header.php");
 
+$query = query("SELECT * FROM products WHERE id =" . escape_string($_GET['id']) ." ");
+
+while ($row = fetch_array($query)){
+
+    echo $row['name'];
+
+}
+
 ?>
 <main>
     <section class="product-detail">
