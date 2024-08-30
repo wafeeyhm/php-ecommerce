@@ -6,25 +6,23 @@ include(TEMPLATE_FRONT .  DS . "header.php");
 
 $query = query("SELECT * FROM products WHERE id =" . escape_string($_GET['id']) ." ");
 
-while ($row = fetch_array($query)){
-
-    echo $row['name'];
-
-}
+while ($row = fetch_array($query)):
 
 ?>
 <main>
     <section class="product-detail">
-        <img src="images/product-image.jpg" alt="Product 1">
+        <img src='<?php echo $row['image_url'] ?>' alt='<?php echo $row['name']; ?>'>
         <div class="details">
-            <h2>Product 1</h2>
-            <p>$19.99</p>
-            <p>Description of the product goes here. It should include details about the product, its features, and any other relevant information.</p>
+            <h2><?php echo $row['name']; ?></h2>
+            <p><?php echo "&#36;" . $row['price']; ?></p>
+            <p><?php echo $row['description']; ?></p>
             <a href="cart.html" class="btn">Add to Cart</a>
         </div>
     </section>
 </main>
 <?php
+
+endwhile;
 
 include(TEMPLATE_FRONT .  DS . "footer.php");
 
